@@ -14,9 +14,14 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning"
         tools:replace="android:allowBackup">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".SupportActivity"></activity>
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".InviteActivity" />
+        <activity android:name=".RideActivity" />
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".verifyenterotptwo" />
-
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

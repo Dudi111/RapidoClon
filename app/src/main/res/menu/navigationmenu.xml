@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view" >
+
+    <item
+        android:id="@+id/navpav"
+        android:icon="@drawable/ic_baseline_payment_24"
+        android:title="Payment"/>
+    <item
+        android:id="@+id/rides"
+        android:icon="@drawable/ic_baseline_more_time_24"
+        android:title="My Rides"/>
+    <item
+        android:id="@+id/invte"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="Invite Friends"/>
+    <item
+        android:id="@+id/noti"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:title="Notification"/>
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Settings"/>
+    <item
+        android:id="@+id/support"
+        android:icon="@drawable/ic_baseline_support_24"
+        android:title="Support"/>
+
+
+</menu>

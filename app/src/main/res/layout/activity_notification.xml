@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel6"
+        android:background="#FFF202">
+
+        <TextView
+            android:id="@+id/tvback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_arrow_back_24"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+            android:layout_margin="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            android:layout_toRightOf="@+id/tvback"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="25dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Support"
+            android:layout_alignParentEnd="true"
+            android:drawableStart="@drawable/ic_baseline_contact_support_24"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_margin="20dp"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ic_baseline_contact_support_24" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel6"
+        android:background="@drawable/ic_rectangle_16"
+        android:layout_marginTop="25dp">
+        <ImageView
+            android:id="@+id/imgbell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_notifications_active_24"
+            android:layout_margin="25dp"/>
+
+        <TextView
+            android:id="@+id/noti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Didn't book any ride yet."
+            android:layout_toEndOf="@id/imgbell"
+            android:layout_marginTop="15dp"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/imgbell" />
+        <TextView
+            android:id="@+id/whathpnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What happened? Please let us know.Take this survay!"
+            android:textSize="20sp"
+            android:layout_below="@+id/noti"
+            android:layout_toEndOf="@id/imgbell"
+            android:layout_toRightOf="@id/imgbell" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/whathpnd"
+            android:text="3 days ago"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

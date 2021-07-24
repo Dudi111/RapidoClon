@@ -11,6 +11,7 @@ import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
@@ -19,6 +20,8 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.common.api.ResolvableApiException;
@@ -51,6 +54,8 @@ import com.google.android.libraries.places.api.net.FindAutocompletePredictionsRe
 import com.google.android.libraries.places.api.net.FindAutocompletePredictionsResponse;
 import com.google.android.libraries.places.api.net.FindCurrentPlaceRequest;
 import com.google.android.libraries.places.api.net.PlacesClient;
+import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.navigation.NavigationView;
 import com.mancj.materialsearchbar.MaterialSearchBar;
 import com.mancj.materialsearchbar.adapter.SuggestionsAdapter;
 import com.skyfishjy.library.RippleBackground;
@@ -83,6 +88,52 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         setContentView(R.layout.activity_map);
 
         materialSearchBar = findViewById(R.id.searchBar);
+        MaterialToolbar materialToolbar=findViewById(R.id.material);
+        DrawerLayout drawerLayout=findViewById(R.id.draw);
+        NavigationView navigationView=findViewById(R.id.navi);
+        materialToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                drawerLayout.openDrawer(GravityCompat.START);
+            }
+        });
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int id=item.getItemId();
+                drawerLayout.closeDrawer(GravityCompat.START);
+                switch (id){
+                    case R.id.navpav:
+                        Intent intent=new Intent(MapActivity.this,PaymentActivity.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.rides:
+                        Intent intent1=new Intent(MapActivity.this, RideActivity.class);
+                        startActivity(intent1);
+                        break;
+                    case R.id.invte:
+                        Intent intent2=new Intent(MapActivity.this, InviteActivity.class);
+                        startActivity(intent2);
+                        break;
+                    case R.id.noti:
+                        Intent intent3=new Intent(MapActivity.this, NotificationActivity.class);
+                        startActivity(intent3);
+                        break;
+                    case R.id.setting:
+                        Intent intent4=new Intent(MapActivity.this, SettingActivity.class);
+                        startActivity(intent4);
+                        break;
+                    case R.id.support:
+                        Intent intent5=new Intent(MapActivity.this, SupportActivity.class);
+                        startActivity(intent5);
+                        break;
+                    default:
+                        return true;
+                }
+                return true;
+            }
+        });
+
         btnFind = findViewById(R.id.btn_find);
         rippleBg = findViewById(R.id.ripple_bg);
 

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel1"
+        android:background="#FFF202">
+
+        <TextView
+            android:id="@+id/tvback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_arrow_back_24"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+            android:layout_margin="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment"
+            android:layout_toRightOf="@+id/tvback"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="25dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Support"
+            android:layout_alignParentEnd="true"
+            android:drawableStart="@drawable/ic_baseline_contact_support_24"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_margin="20dp"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ic_baseline_contact_support_24" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/personal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal Wallet"
+        android:layout_below="@+id/rel1"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/tvrapido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rapido Wallet"
+        android:layout_below="@+id/personal"
+        android:drawableStart="@drawable/wallet"
+        android:padding="15dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/wallet" />
+    <TextView
+        android:id="@+id/paytm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PayTm"
+        android:layout_below="@+id/tvrapido"
+        android:drawableStart="@drawable/paytm"
+        android:layout_margin="15dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/paytm" />
+    <TextView
+        android:id="@+id/ptmlink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Link"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tvrapido"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:layout_marginRight="10dp"
+        android:textColor="#201f6a"/>
+
+    <TextView
+        android:id="@+id/amazon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amazon Pay"
+        android:layout_below="@+id/paytm"
+        android:drawableStart="@drawable/amazon_pay"
+        android:layout_margin="15dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/amazon_pay" />
+    <TextView
+        android:id="@+id/amazonlink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Link"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/ptmlink"
+        android:layout_marginTop="25dp"
+        android:textSize="20sp"
+        android:layout_marginRight="10dp"
+        android:textColor="#201f6a"/>
+    <TextView
+        android:id="@+id/tvupi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amazon"
+        android:text="UPI"
+        android:layout_marginStart="20dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/payupi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QR Pay"
+        android:layout_below="@+id/tvupi"
+        android:drawableStart="@drawable/upi_logo"
+        android:layout_margin="15dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/upi_logo" />
+    <TextView
+        android:id="@+id/gpay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPay"
+        android:layout_below="@+id/payupi"
+        android:drawableStart="@drawable/googlepay"
+        android:layout_margin="15dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/googlepay" />
+    <TextView
+        android:id="@+id/other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Others"
+        android:layout_below="@+id/gpay"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:id="@+id/cash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cash"
+        android:layout_below="@+id/other"
+        android:drawableStart="@drawable/rupee_indian_"
+        android:layout_margin="15dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/upi_logo" />
+
+
+
+
+
+
+
+
+</RelativeLayout>

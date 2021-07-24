@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SupportActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relsup"
+        android:background="#FFF202">
+
+        <TextView
+            android:id="@+id/tvback5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_arrow_back_24"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+            android:layout_margin="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Support"
+            android:layout_toRightOf="@+id/tvback5"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="25dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relsupp"
+        android:background="@drawable/ic_rectangle_16"
+        android:layout_below="@+id/relsup"
+        android:layout_margin="30dp">
+
+        <TextView
+            android:id="@+id/tvsupion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/support"
+            android:layout_margin="15dp"
+            android:drawableLeft="@drawable/support" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Need help?"
+            android:layout_toRightOf="@+id/tvsupion"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="25dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get help"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_rectangle_16"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#23437a"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/raise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relsupp"
+        android:text="Raise Ticket"
+        android:background="@drawable/ic_rectangle_16"
+        android:gravity="center"
+        android:textColor="#23437a"
+        android:layout_centerInParent="true"
+        android:textSize="30dp"/>
+    <TextView
+        android:id="@+id/tvfaq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FAQs"
+        android:layout_below="@+id/raise"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="40dp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="40dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvfaq"
+        android:background="@drawable/ic_rectangle_1"
+        android:layout_margin="30dp">
+        <TextView
+            android:id="@+id/tvss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Safety and security"
+            android:drawableTop="@drawable/ic_baseline_security_24"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ride and bill"
+            android:layout_toRightOf="@+id/tvss"
+            android:drawableTop="@drawable/ic_baseline_bike_scooter_24"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp" />
+        <TextView
+            android:id="@+id/tvsupapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvss"
+            android:text="Account N app"
+            android:textSize="20sp"
+            android:drawableTop="@drawable/ic_baseline_app_blocking_24"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment N wallet"
+            android:layout_toRightOf="@+id/tvsupapp"
+            android:drawableTop="@drawable/payments_24"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/tvss"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp" />
+        <TextView
+            android:id="@+id/tvsupser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvsupapp"
+            android:text="Services"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:drawableTop="@drawable/ic_baseline_miscellaneous_services_24"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Referrals"
+            android:layout_toRightOf="@+id/tvsupser"
+            android:drawableTop="@drawable/change"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/tvsupapp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp" />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

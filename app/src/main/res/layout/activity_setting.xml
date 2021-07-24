@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel7"
+        android:background="#FFF202">
+
+        <TextView
+            android:id="@+id/tvback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_arrow_back_24"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+            android:layout_margin="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Setting"
+            android:layout_toRightOf="@+id/tvback"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="25dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Support"
+            android:layout_alignParentEnd="true"
+            android:drawableStart="@drawable/ic_baseline_contact_support_24"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_margin="20dp"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ic_baseline_contact_support_24" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/genral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel7"
+        android:text="Genral"
+        android:layout_margin="20dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"/>
+    <RelativeLayout
+        android:id="@+id/relgen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/genral"
+        >
+        <ImageView
+            android:id="@+id/ivprofilenew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp" />
+        <TextView
+            android:id="@+id/tvprofile1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:layout_toEndOf="@+id/ivprofilenew"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/ivprofilenew" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ivprofilenew"
+            android:text="8073089872"
+            android:textSize="20sp"
+            android:layout_below="@+id/tvprofile1"
+            android:layout_toRightOf="@+id/ivprofilenew" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relfav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relgen"
+        android:layout_marginTop="15dp"
+        >
+        <ImageView
+            android:id="@+id/ivfav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/favorite"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp" />
+        <TextView
+            android:id="@+id/tvfav1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favorites"
+            android:layout_toEndOf="@+id/ivfav"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/ivfav" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ivfav"
+            android:text="Manage favorite locations"
+            android:textSize="20sp"
+            android:layout_below="@+id/tvfav1"
+            android:layout_toRightOf="@+id/ivfav" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relprefer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relfav"
+        android:layout_marginTop="15dp"
+        >
+        <ImageView
+            android:id="@+id/ivprefer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/preferenes"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp" />
+        <TextView
+            android:id="@+id/tvpreference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preference"
+            android:layout_toEndOf="@+id/ivprefer"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/ivprefer" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ivprefer"
+            android:text="Manage preferences"
+            android:textSize="20sp"
+            android:layout_below="@+id/tvpreference"
+            android:layout_toRightOf="@+id/ivprefer" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rellang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relprefer"
+        android:layout_marginTop="15dp"
+        >
+        <ImageView
+            android:id="@+id/ivlang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/language"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp" />
+        <TextView
+            android:id="@+id/tvlanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="App language"
+            android:layout_toEndOf="@+id/ivlang"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/ivlang" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ivlang"
+            android:text="English"
+            android:textSize="20sp"
+            android:layout_below="@+id/tvlanguage"
+            android:layout_toRightOf="@+id/ivlang" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/ivline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_line"
+        android:layout_below="@+id/rellang"/>
+    <TextView
+        android:id="@+id/other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivline"
+        android:text="Other"
+        android:layout_margin="20dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"/>
+    <RelativeLayout
+        android:id="@+id/relabout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/other"
+        android:layout_marginTop="15dp"
+        >
+        <ImageView
+            android:id="@+id/ivabout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nkedrapiddddddo09356"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp" />
+        <TextView
+            android:id="@+id/tvabout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:layout_toEndOf="@+id/ivabout"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/ivabout" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ivabout"
+            android:text="5.6.1"
+            android:textSize="20sp"
+            android:layout_below="@+id/tvabout"
+            android:layout_toRightOf="@+id/ivabout" />
+    </RelativeLayout><TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/relabout"
+    android:text="Logout"
+    android:drawableStart="@drawable/login_24"
+    android:textSize="22sp"
+    android:textColor="@color/black"
+    android:layout_margin="25dp"
+    android:drawableLeft="@drawable/login_24" />
+
+
+
+
+
+
+
+</RelativeLayout>
